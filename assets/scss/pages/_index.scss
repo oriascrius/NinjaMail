@@ -1,0 +1,219 @@
+body {
+  font-family: Raleway;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+p {
+  margin: 0;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+}
+// ---------------------------------------------
+
+.background-Bg-Img {
+  background-image: url("../images/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500vh; // 設置高度為視窗高度的 100%
+}
+
+// ---------------------------------------------
+.banner {
+  padding: 103px 0 120px 0;
+  h2 {
+    font-family: Playfair Display;
+    font-size: 59px;
+    font-weight: 900;
+    line-height: 71px;
+    margin-bottom: 23px;
+  }
+  h5 {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 35px;
+  }
+  a {
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 1.0499999523162842px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:nth-child(1) {
+      padding: 20px 48px;
+      background-color: #4ba87d;
+      color: #ffffff;
+      margin-right: 45px;
+    }
+    &:nth-child(2) {
+      padding: 18px 28px;
+      background-color: #ffffff;
+      color: #4ba87d;
+      border: 3px solid #4ba87d;
+    }
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+  img {
+    width: 680px;
+    height: 383px;
+  }
+  .bannerText {
+    position: relative;
+  }
+  .bannerImg {
+    position: absolute;
+    z-index: -1;
+    // right: 220px;
+    // top: -22px;
+    left: 400px;
+    top: -22px;
+  }
+  .bannerWrap {
+    margin-left: 110px;
+  }
+}
+// ---------------------------------------------
+
+.reachMore {
+  padding: 120px 0 80px 0;
+  .reachMoreBg {
+    background-image: url("../images/VIDEO.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 944px;
+    max-height: 531px;
+    padding: 162px 0;
+  }
+  h2 {
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 80px;
+    color: #ffffff;
+    padding-bottom: 60px;
+  }
+  a {
+    font-family: Raleway;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 1.0499999523162842px;
+    color: #ffffff;
+    background-color: #4ba87d;
+    padding: 20px 32px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+// ---------------------------------------------
+.emailCampaigns {
+  padding: 20px 0 133px;
+  h3 {
+    font-family: Playfair Display;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .card {
+    box-shadow: 0px 8px 16px 0px #00000029;
+    width: 320px;
+    .card-text {
+      a {
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 19px;
+        text-align: left;
+        color: #4ba87d;
+        margin-top: 20px;
+      }
+      h5 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #000000;
+      }
+    }
+  }
+  .card-left {
+    margin-bottom: 140px;
+  }
+  .card-text {
+    padding: 24px 30px 20px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+// ---------------------------------------------
+.bestBrands {
+  padding-bottom: 146px;
+  h2 {
+    font-family: Playfair Display;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 48px;
+    padding-bottom: 50px;
+  }
+  ul {
+    gap: 50px;
+  }
+}
+
+// ---------------------------------------------
+.joinOurList {
+  padding-bottom: 75px;
+}
+
+// ---------------------------------------------
+.getStarted {
+  padding: 82px 0 95px 0;
+  background-color: #4ba87d;
+  h2 {
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 80px;
+    margin-bottom: 40px;
+  }
+  a {
+    padding: 14px 23px;
+    background-color: #ffffff;
+    color: #4ba87d;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 1.0499999523162842px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
