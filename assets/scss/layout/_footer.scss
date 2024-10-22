@@ -1,5 +1,40 @@
 footer {
-  padding-top: 73px;
+  h2 {
+    transition: transform 0.3s ease;
+    animation: swing 1s forwards;
+
+    &:hover {
+      animation: swing 0.5s ease infinite;
+    }
+
+    @keyframes swing {
+      0% {
+        transform: rotate(0deg);
+        /* 初始狀態 */
+      }
+
+      25% {
+        transform: rotate(-5deg);
+        /* 向左搖擺 */
+      }
+
+      50% {
+        transform: rotate(5deg);
+        /* 向右搖擺 */
+      }
+
+      75% {
+        transform: rotate(-5deg);
+        /* 再次向左搖擺 */
+      }
+
+      100% {
+        transform: rotate(0deg);
+        /* 回到初始狀態 */
+      }
+    }
+  }
+
   a {
     font-size: 19px;
     font-weight: 700;
@@ -7,9 +42,11 @@ footer {
     text-align: left;
     color: #000000;
   }
+
   .footer-top {
-    padding-bottom: 56px;
+    padding: 73px 0 56px 0;
   }
+
   .footer-bottom {
     text-align: center;
     padding: 39px 0 48px 0;
@@ -18,11 +55,16 @@ footer {
     line-height: 18px;
     border-top: 2px solid #dbdbdb;
   }
+
   ul {
     margin: 0 -30px;
+    width: 10%;
+
     li {
       position: relative;
       display: inline-block;
+      width: 50%;
+
       &::after {
         content: "";
         position: absolute;
@@ -33,9 +75,11 @@ footer {
         background-color: #4ba87d;
         transition: width 0.3s ease;
       }
+
       &:hover::after {
-        width: 50%;
+        width: 100%;
       }
+
       a {
         padding: 10px;
       }
@@ -43,23 +87,19 @@ footer {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   footer {
-    a {
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 14px;
-      text-align: left;
+    .footer-top {
+      padding: 47px 0 23px 0;
     }
+
     .footer-bottom {
       text-align: start;
       flex-direction: column;
       padding: 22px 0 55px 0;
-      p {
-        font-size: 9px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
+
+      >div:nth-child(1) {
+        margin-bottom: 20px;
       }
     }
   }
