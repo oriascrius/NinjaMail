@@ -229,6 +229,10 @@ a {
     }
   }
 
+  .card-wrap {
+    justify-content: center;
+  }
+
   .card {
     box-shadow: 0px 8px 16px 0px #00000029;
     max-width: 320px;
@@ -273,9 +277,15 @@ a {
   .emailCampaigns {
     padding: 0 0 80px 0;
 
+    .card-wrap-left {
+      margin-right: auto;
+    }
+
     .card-wrap-right {
       margin-left: auto;
     }
+
+
 
     .card-left {
       margin: 0 0 14px 0;
